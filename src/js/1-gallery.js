@@ -93,7 +93,7 @@ const createImages = images.map(({ preview, original, description }) => {
 }).join("");
 
 
-containerImg.innerHTML = createImages;
+containerImg.insertAdjacentHTML("beforeend", createImages(images));
 
 const localStorageImg = localStorage.getItem(
   "createImages", JSON.stringify("createImages"));
