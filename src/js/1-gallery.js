@@ -1,6 +1,6 @@
+import "simplelightbox/dist/simple-lightbox.min.css";
 
-
-
+import SimpleLightbox from "simplelightbox";
 
 const images = [
   {
@@ -101,9 +101,8 @@ const localStorageImg = localStorage.getItem(
 console.log(localStorageImg);
 
 
-import "simplelightbox/dist/simple-lightbox.min.css";
-
-import SimpleLightbox from "simplelightbox";
-
-
-const lightbox = new SimpleLightbox(".gallery a", { captionDelay: 250, });
+const lightbox = new SimpleLightbox(".gallery a", {
+  caption: true,
+  captionsData: "alt",
+  captionDelay: 250,
+});
