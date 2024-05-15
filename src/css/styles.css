@@ -79,7 +79,6 @@ background: rgba(46, 47, 66, 0.80);
 label {
  display: flex;
  flex-direction: column;
- /* width: 360px; */
  gap: 8px;
  color: #2E2F42;
  font-family: Montserrat;
