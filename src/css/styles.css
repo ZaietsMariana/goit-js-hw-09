@@ -125,7 +125,7 @@ label textarea:hover{
  border-color: #2E2F42;
 }
 
-button {
+[type="submit"] {
  display: flex;
  border: 8px;
  border-radius: 8px;
@@ -145,6 +145,6 @@ button {
  letter-spacing: 0.04em;
 }
 
-button:hover{
+[type="submit"]:hover{
 background: #6C8CFF;
 }
