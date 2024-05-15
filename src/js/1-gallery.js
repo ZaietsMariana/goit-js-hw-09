@@ -79,8 +79,9 @@ function handleClick(event) {
   }
 }
 
-const createImages = images.map(({ preview, original, description }) => {
-       return `<li class= "item gallery-item">
+function createImages(images) {
+  return images.map(({ preview, original, description }) => 
+     `<li class= "item gallery-item">
             <a class="gallery-link" href="${original}" >
                 <img
                 class="gallery-image"
@@ -89,17 +90,11 @@ const createImages = images.map(({ preview, original, description }) => {
                 />
             </a>     
 </li>
-`;
-}).join("");
+`).join("");
+}
 
 
 containerImg.insertAdjacentHTML("beforeend", createImages(images));
-
-const localStorageImg = localStorage.getItem(
-  "createImages", JSON.stringify("createImages"));
-
-console.log(localStorageImg);
-
 
 const lightbox = new SimpleLightbox(".gallery a", {
   caption: true,
