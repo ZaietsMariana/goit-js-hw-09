@@ -70,14 +70,6 @@ const images = [
 
 const containerImg = document.querySelector(".gallery");
 
-containerImg.addEventListener("click", handleClick);
-
-function handleClick(event) {
-  event.preventDefault();
-  if (event.target === event.currentTarget) {
-    return;
-  }
-}
 
 function createImages(images) {
   return images.map(({ preview, original, description }) => 
